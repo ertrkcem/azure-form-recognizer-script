@@ -1,6 +1,9 @@
 # azure-form-recognizer-script
 Small script to parse invoices using the azure form recognizer SDK for JS 
 
+> **_Important Note !!!_** 
+Form recognizer pricing is based on the pages we send them to analyze, so try not to run the script for the same file multiple times.
+
 # Configuration and Environment
 It is supposed to be run in local, it is tested with:
 * Node -> v18.9.0
@@ -22,4 +25,4 @@ node index.js
 
 # What will it do
 In the same project folder, it will fetch every invoice files in the ``invoices`` folder and send them to azure form recognizer API, 
-fetch the analysis results and store the logs in seperate files for each invoice in ``process_logs`` folder.
+fetch the analysis results and store the logs in seperate files for each invoice under ``process_logs`` folder.
